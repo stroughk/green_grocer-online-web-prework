@@ -1,5 +1,4 @@
 require_relative 'grocer'
-
 def items
 	[
 		{"AVOCADO" => {:price => 3.00, :clearance => true}},
@@ -54,4 +53,4 @@ coupons.each do |coupon|
 	puts "Get #{coupon[:item].capitalize} for #{coupon[:cost]} when you by #{coupon[:num]}"
 end
 
-puts "Your total is #{checkout(cart: cart, coupons: coupons)}" 
+puts "Your total is #{checkout(cart: cart, coupons: coupons)}"
